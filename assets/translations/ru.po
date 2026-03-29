@@ -1,3 +1,4 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Museum of All Things\n"
@@ -19,19 +20,25 @@ msgid "The museum is currently unstaffed. Please refer to signage for informatio
 msgstr "Сейчас в музее нет персонала. Пожалуйста, ориентируйтесь по информационным табличкам."
 
 msgid "English"
-msgstr "Английский"
+msgstr "English"
 
 msgid "Spanish"
-msgstr "Испанский"
+msgstr "Español"
 
 msgid "Portuguese"
-msgstr "Португальский"
+msgstr "Português"
 
 msgid "French"
-msgstr "Французский"
+msgstr "Français"
 
 msgid "Japanese"
-msgstr "Японский"
+msgstr "日本語"
+
+msgid "Chinese"
+msgstr "中文"
+
+msgid "Russian"
+msgstr "Русский"
 
 msgid "Are you sure you want to Quit?"
 msgstr "Вы уверены, что хотите выйти?"
@@ -49,7 +56,7 @@ msgid "Paused"
 msgstr "Пауза"
 
 msgid " - Paused"
-msgstr " — Пауза"
+msgstr " - Пауза"
 
 msgid "Lobby"
 msgstr "Лобби"
@@ -327,6 +334,8 @@ msgstr "Поиск"
 msgid "Featured Search Exhibits"
 msgstr "Рекомендуемые экспозиции: поиск"
 
+### scenes/Lobby.tscn Section
+
 msgid ""
 "[b]Welcome to the Museum of All Things![/b]\n"
 "\n"
@@ -359,14 +368,28 @@ msgid ""
 msgstr ""
 "[b]Экспозиции музея[/b]\n"
 "\n"
-"[fill]Экспозиции не создаются вручную — они генерируются процедурно, с использованием изображений и текстовых данных из Википедии и Wikimedia Commons. Это означает, что практически любая тема, имеющая страницу в Википедии, может быть представлена в этом музее в виде экспозиции!\n"
+"[fill]Экспозиции не создаются вручную-- они генерируются процедурно, с использованием изображений и текстовых данных из Википедии и Wikimedia Commons. Это означает, что практически любая тема, имеющая страницу в Википедии, может быть представлена в этом музее в виде экспозиции!\n"
 "\n"
 "Кроме того, каждая экспозиция содержит множество коридоров, соединяющих его с другими экспозициями. Эти коридоры формируются на основе ссылок в текущей статье Википедии. Вы можете бесконечно переходить от экспозиции к экспозиции, следуя своему любопытству.\n"
 "\n"
 "Если вы предпочитаете сразу перейти к конкретной теме, вы можете воспользоваться поисковым терминалом, расположенным в конце вестибюля прямо позади вас. Просто введите интересующую вас тему в интерфейс терминала — и он создаст коридор, по которому вы сможете пройти прямо к нужной экспозиции.[/fill]"
 
-msgid "Welcome to the MoAT Custom Exhibit Terminal\n\nYou may access a specific exhibit by selecting \"Enter Exhibit Name.\" Alternatively, you may ask for a random exhibit.\n\nHit \"E\" on your keyboard to interact with the terminal, or press Y/△ if you are using a controller.\n\n"
-msgstr "Добро пожаловать в терминал пользовательских экспозиций MoAT\n\nВы можете открыть конкретную экспозицию, выбрав «Ввести название экспозиции». Также можно запросить случайную экспозицию.\n\nНажмите «E» на клавиатуре, чтобы взаимодействовать с терминалом, или нажмите Y/△, если вы используете геймпад.\n\n"
+### scenes/menu/TerminalMenu.tscn Section
+
+msgid ""
+"Welcome to the MoAT Custom Exhibit Terminal\n"
+"\n"
+"You may access a specific exhibit by selecting \"Enter Exhibit Name.\" Alternatively, you may ask for a random exhibit.\n"
+"\n"
+"Hit \"E\" on your keyboard to interact with the terminal, or press Y/△ if you are using a controller.\n"
+"\n"
+msgstr ""
+"Добро пожаловать в терминал пользовательских экспозиций MoAT\n"
+"\n"
+"Вы можете открыть конкретную экспозицию, выбрав \"Ввести название экспозиции\". Также можно запросить случайную экспозицию.\n"
+"\n"
+"Нажмите \"E\" на клавиатуре, чтобы взаимодействовать с терминалом, или нажмите Y/△, если вы используете контроллер.\n"
+"\n"
 
 msgid "Enter Exhibit Name "
 msgstr "Ввести название экспозиции "
@@ -374,8 +397,12 @@ msgstr "Ввести название экспозиции "
 msgid "Go to Random Exhibit "
 msgstr "Случайная экспозиция "
 
-msgid "Enter the title of the exhibit you would like to acccess. A path will be routed and the door will open to the best matching exhibit.\n\n"
-msgstr "Введите название экспозиции, к которой вы хотите получить доступ. Маршрут будет проложен, и дверь откроется к наиболее подходящей экспозиции.\n\n"
+msgid ""
+"Enter the title of the exhibit you would like to acccess. A path will be routed and the door will open to the best matching exhibit.\n"
+"\n"
+msgstr ""
+"Введите название экспозиции, к которой вы хотите получить доступ. Маршрут будет проложен, и дверь откроется к наиболее подходящей экспозиции.\n"
+"\n"
 
 msgid "Enter exhibit title"
 msgstr "Введите название экспозиции"
@@ -389,11 +416,21 @@ msgstr "Назад"
 msgid "Exhibit Found: \"\"\n"
 msgstr "Экспозиция найдена: \"\"\n"
 
-msgid "\nProceed to your right to access this exhibit, or return to the terminal's main menu to access a different exhibit.\n\n"
-msgstr "\nПройдите направо, чтобы попасть в эту экспозицию, или вернитесь в главное меню терминала, чтобы выбрать другую экспозицию.\n\n"
+msgid ""
+"\n"
+"Proceed to your right to access this exhibit, or return to the terminal's main menu to access a different exhibit.\n"
+"\n"
+msgstr ""
+"\n"
+"Пройдите направо, чтобы попасть в эту экспозицию, или вернитесь в главное меню терминала, чтобы выбрать другую экспозицию.\n"
+"\n"
 
 msgid "OK / Exit"
 msgstr "ОК / Выход"
 
-msgid "We were unable to locate the exhibit that you requested. Please try a different exhibit.\n\n"
-msgstr "Нам не удалось найти запрошенную вами экспозицию. Пожалуйста, попробуйте другую.\n\n"
+msgid ""
+"We were unable to locate the exhibit that you requested. Please try a different exhibit.\n"
+"\n"
+msgstr ""
+"Нам не удалось найти запрошенную вами экспозицию. Пожалуйста, попробуйте другую.\n"
+"\n"
